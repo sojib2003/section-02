@@ -1,0 +1,82 @@
+:root{
+	--pink: rgb(250, 30, 61);
+	--gray: #222222;
+	--icon: #bbbbbb;
+}
+/*global css*/
+*,ul{
+	margin: 0;
+	padding: 0;
+}
+.active{color: var(--pink);}
+
+body{font-family: 'Oswald', sans-serif;}
+
+a{text-decoration: none;}
+
+.line{width: 115px;background-color: var(--pink);height: 3px;margin: 16px 0;display: inline-block;}
+
+/*header section css*/
+header{width: 280px;height: 100vh;background-color: #000;position: fixed;text-align: center;}
+header .logo img{width: 100px;}
+header .logo{padding: 60px 0;}
+header nav ul{margin-bottom: 40px;}
+header nav ul li{margin-bottom: 8px;}
+header nav ul li a{font-size: 17px;font-weight: 500;color: white;text-transform: uppercase;transition: 0.5s;}
+header nav ul li a:hover{color: var(--pink); transition: 0.5s;}
+header nav button{padding: 12px 35px 7px;background-color: var(--gray);color: white;font-size: 17px;font-weight: 500;}
+.nice{margin: 6px; font-size: 17px; font-weight: 700;}
+header .navicons ul li{list-style: none;margin: 0 8px;display: inline-block; color: var(--icon);transition: 0.5s;}
+header .navicons{position: absolute;width: 100%;bottom: 20px;}
+header .navicons ul li:hover{color: white;transition: 0.5s;}
+
+/*main css*/
+
+main{width: calc(100% - 280px);margin-left: auto;}
+
+.banner{z-index: 99;position: relative;height: 100vh; width: 100%;background-image: url(../img/bannar.png);background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: scroll;}
+.banner .row{align-items: center;height: 100vh;}
+.banner .b-content{}
+.banner .b-content h5{font-size: 24px;color: white;letter-spacing: 4px;text-transform: uppercase;font-weight: 400;margin-bottom: 24px;}
+.banner .b-content h1{font-size: 60px;font-weight: 600;text-transform: uppercase;color: var(--pink);margin-bottom: 42px;}
+.banner .b-content p{font-size: 20px;font-weight: 300;color: white;margin-bottom: 37px;}
+.theme-btn {background-color:var(--pink);color: white;padding: 12px 32px;text-transform: uppercase;font-size: 17px;display: inline-block;}
+.theme-btn:hover{color: white;}
+
+/*banner extra css*/
+
+.b-extra{width: 100%;margin-top: -150px;background-color: var(--gray);}
+.b-extra .eb-content{background-color: white;z-index: 9999; position: relative;}
+.b-extra .eb-content .bg-img{background-image: url(../img/football1.png); background-size: cover; background-repeat: no-repeat;background-position: center;}
+.b-extra .eb-content h5{font-size: 14px;line-height: 26px;font-weight: 500;letter-spacing: 0px;color: #1a1a1a;padding-top: 15px;}
+.b-extra .eb-content h6{background-color: black;color: white;padding: 12px;font-weight: 600;font-size: 13px;}
+.b-extra .eb-content p{font-size: 17px;color: #1a1a1a; padding-top: 13px;}
+.b-extra .eb-content a{ font-size: 17px; color: var(--pink);text-transform: uppercase;transition: 0.5s;}
+.b-extra .eb-content a:hover{text-decoration: underline;transition: 0.5s;}
+ .b-extra.p-5 {padding: 42px!important;}
+.b-extra .bg-img img{right: 0;top: 50%;transform: translateY(-50px);}
+
+/*history css*/
+
+.history{width: 100%;background-color: var(--gray);padding: 100px 0;}
+.history .like h4{font-size: 24;letter-spacing: 5px;line-height: 34px;text-transform: uppercase;color: white;}
+.history .like h2{font-size: 56px;font-weight: 600;text-transform: uppercase;color: var(--pink);margin-bottom: 42px;}
+.history .like p{font-size: 17px;color: white;margin-bottom: 32px;}
+
+/*blog css*/
+
+.posts{width: 100%;padding: 80px 0;background-color: var(--gray);}
+.posts .section-title{text-align: center;}
+.posts .section-title h3{font-size: 24;letter-spacing: 5px;line-height: 34px;text-transform: uppercase;color: white;}
+.posts .section-title h2{font-size: 60px;font-weight: 600;text-transform: uppercase;color: var(--pink);margin-bottom: 45px;}
+.posts .p-item{position: relative;}
+.posts .p-content{position: absolute;bottom: 0px;left: 0px;right: 0px;transition: 0.5s;background: url(../img/blog_masonry_tile_gradient.png)top left repeat-x;padding: 0px 0px 10px 30px ;}
+.posts .p-item::after{content: "";position: absolute;z-index: 2;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,.2);opacity: 0;transition: all 0.6s ease-out;}
+.posts .p-item:hover::after{opacity: 1;}
+.posts .p-content span{color: rgba(255, 255, 255, 0.7);margin-right: 8px;}
+.posts .p-content span i{margin-right: 8px;}
+.posts .p-content .post-item h2 a{font-size: 40px;color: white;text-transform: uppercase;font-weight: 600;}
+.posts .p-content .line{width: 0; transition: 0.5s;}
+.posts .p-item:hover .line{width: 115px; transition: 0.5s;}
+.posts .p-item:hover .p-content{padding-bottom: 30px; transition: 0.5s;}
+.right-post .post-item a{font-size: 24px !important;font-weight: 300 !important;letter-spacing: 5px;}
